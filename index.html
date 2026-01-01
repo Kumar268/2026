@@ -1,0 +1,1229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<title>Happy New Year 2026 🐼🥰💕✨🎵🌸🎀🍭🐾</title>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;800&family=Dancing+Script:wght@400;600;700&family=Chewy&family=Pacifico&family=Fredoka+One&family=Comic+Neue:wght@700&family=Balsamiq+Sans:wght@700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+}
+
+html {
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  height: 100vh;
+  height: -webkit-fill-available;
+  background: linear-gradient(-45deg, #ffeaa7, #fab1a0, #fdcb6e, #e17055, #dda0dd, #ff9a9e, #ffeaa7);
+  background-size: 800% 800%;
+  animation: superGradientShift 20s ease infinite;
+  overflow: hidden;
+  font-family: 'Nunito', sans-serif;
+  color: #e17055;
+  position: relative;
+  touch-action: manipulation;
+  overscroll-behavior: none;
+}
+
+@keyframes superGradientShift {
+  0% { background-position: 0% 50%; }
+  25% { background-position: 100% 50%; }
+  50% { background-position: 100% 100%; }
+  75% { background-position: 0% 100%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* TEXT CONTAINER - FIXED POSITION */
+.text-container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 95%;
+  max-width: 950px;
+  z-index: 15;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  padding: 10px;
+}
+
+.text-container.show {
+  opacity: 1;
+}
+
+/* CARD - FIXED IN PLACE */
+.card {
+  position: relative;
+  text-align: center;
+  padding: 35px 25px;
+  background: linear-gradient(145deg, 
+    rgba(255,248,220,0.98), 
+    rgba(255,235,205,0.95), 
+    rgba(255,228,196,0.92)
+  );
+  border: 6px solid;
+  border-image: linear-gradient(45deg, #ff9a8b, #fab1a0, #ffd23f, #ff6b9d, #e17055) 1;
+  border-radius: 40px;
+  box-shadow: 
+    0 20px 50px rgba(255,154,139,0.5),
+    inset 0 4px 15px rgba(255,255,255,0.9),
+    0 0 0 8px rgba(255,255,255,0.1),
+    0 0 40px rgba(255,215,0,0.3);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  overflow: hidden;
+  position: relative;
+  max-height: 85vh;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.card::-webkit-scrollbar {
+  width: 5px;
+}
+
+.card::-webkit-scrollbar-track {
+  background: rgba(255,248,220,0.3);
+  border-radius: 10px;
+}
+
+.card::-webkit-scrollbar-thumb {
+  background: linear-gradient(45deg, #ff9a8b, #fab1a0);
+  border-radius: 10px;
+}
+
+.card::before {
+  content: '🐼🎀🌹🌸🍭🐾';
+  position: absolute;
+  top: -25px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 1.5em;
+  animation: pandaBowDance 4s infinite;
+  z-index: 1;
+}
+
+.card::after {
+  content: '🌹💕🌸🎀🐾';
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 1.3em;
+  animation: roseFooterWiggle 3s infinite;
+  z-index: 1;
+}
+
+.card-bg-pattern {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-image: 
+    radial-gradient(circle at 20% 30%, rgba(255,154,139,0.1) 2px, transparent 3px),
+    radial-gradient(circle at 70% 40%, rgba(255,154,139,0.1) 2px, transparent 3px),
+    radial-gradient(circle at 40% 70%, rgba(255,154,139,0.1) 2px, transparent 3px);
+  background-size: 40px 40px;
+  z-index: 0;
+}
+
+@keyframes pandaBowDance {
+  0%, 100% { transform: translateX(-50%) rotate(-5deg) scale(1); }
+  33% { transform: translateX(-50%) rotate(5deg) scale(1.2); }
+  66% { transform: translateX(-50%) rotate(0deg) scale(1.15); }
+}
+
+@keyframes roseFooterWiggle {
+  0%, 100% { transform: translateX(-50%) rotate(-2deg); }
+  50% { transform: translateX(-50%) rotate(2deg) scale(1.25); }
+}
+
+/* TEXT LINES */
+.text-line {
+  display: block;
+  font-size: 1.2em;
+  line-height: 1.6;
+  color: #e17055;
+  font-weight: 500;
+  text-shadow: 0 2px 4px rgba(255,255,255,0.7);
+  font-family: 'Comic Neue', cursive;
+  margin-bottom: 10px;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  word-break: break-word;
+}
+
+.text-container.show .text-line {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* HEART PANDA */
+.heart-panda {
+  font-size: 5em;
+  margin: 20px 0;
+  display: inline-block;
+  animation: pandaHeartBeat 1.2s infinite ease-in-out;
+  filter: drop-shadow(0 10px 20px rgba(255,154,139,0.7));
+  position: relative;
+  cursor: pointer;
+  z-index: 2;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  touch-action: manipulation;
+  min-height: 70px;
+  min-width: 70px;
+}
+
+.text-container.show .heart-panda {
+  opacity: 1;
+}
+
+/* SIGNATURE */
+.signature {
+  margin-top: 25px;
+  font-size: 1.5em;
+  font-family: 'Pacifico', cursive;
+  font-weight: 700;
+  background: linear-gradient(135deg, #e17055, #ffd23f, #ff6b9d, #e17055);
+  background-size: 300% 300%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-shadow: 0 5px 10px rgba(255,152,139,0.5);
+  position: relative;
+  z-index: 2;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.text-container.show .signature {
+  opacity: 1;
+}
+
+.signature::after {
+  content: '🐼💝🌹🌸🎀🍭🐾';
+  position: absolute;
+  right: -60px;
+  animation: signatureSpin 5s infinite linear;
+  display: inline-block;
+}
+
+/* EMOJI FLOATERS */
+.emoji-floater {
+  position: absolute;
+  font-size: 20px;
+  z-index: 4;
+  pointer-events: none;
+  animation: emojiFloat 15s infinite linear;
+  filter: drop-shadow(0 4px 8px rgba(255,154,139,0.3));
+  will-change: transform;
+}
+
+@keyframes emojiFloat {
+  0% {
+    transform: translateY(100vh) rotate(0deg) scale(0.7);
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+    transform: translateY(90vh) rotate(-10deg) scale(1);
+  }
+  90% {
+    opacity: 1;
+    transform: translateY(10vh) rotate(10deg) scale(1.1);
+  }
+  100% {
+    transform: translateY(-20vh) rotate(20deg) scale(0.8);
+    opacity: 0;
+  }
+}
+
+/* EMOJI SHOWER EFFECT */
+.emoji-shower {
+  position: fixed;
+  font-size: 18px;
+  z-index: 100;
+  pointer-events: none;
+  animation: emojiShower 1.5s ease-out forwards;
+  will-change: transform;
+}
+
+@keyframes emojiShower {
+  0% {
+    opacity: 1;
+    transform: translateY(0) scale(1) rotate(0deg);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(100px) scale(0.5) rotate(360deg);
+  }
+}
+
+/* STARS BACKGROUND */
+.star {
+  position: absolute;
+  background-color: #fff;
+  border-radius: 50%;
+  animation: twinkle 2s infinite alternate;
+  z-index: 0;
+}
+
+@keyframes twinkle {
+  0% { opacity: 0.3; transform: scale(0.8); }
+  100% { opacity: 1; transform: scale(1); }
+}
+
+/* CONTROLS - LARGER TOUCH TARGETS */
+.music-control, .youtube-player {
+  position: fixed;
+  z-index: 25;
+  background: linear-gradient(145deg, #fff8dc, #ffe4b5, #ffedcc);
+  border: 4px solid #ff9a8b;
+  border-radius: 40px;
+  padding: 15px 20px;
+  box-shadow: 
+    0 15px 40px rgba(255,154,139,0.6),
+    inset 0 4px 0 rgba(255,255,255,0.95),
+    0 0 30px rgba(255,152,139,0.4);
+  cursor: pointer;
+  transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  min-height: 60px;
+  min-width: 60px;
+  touch-action: manipulation;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.music-control {
+  top: 15px;
+  right: 15px;
+  animation: pandaBounce 3s infinite, musicPulsePanda 1.2s infinite !important;
+  position: relative;
+  overflow: hidden;
+}
+
+.music-control::before {
+  content: '🐼🎵🌸🎀';
+  position: absolute;
+  font-size: 1.2em;
+  z-index: 2;
+  animation: musicPandaDance 2s infinite;
+}
+
+.music-control::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.8), transparent);
+  animation: musicShine 3s infinite;
+}
+
+.youtube-player {
+  top: 15px;
+  left: 15px;
+  animation: youtubePandaFloat 4s infinite ease-in-out;
+  gap: 8px;
+}
+
+.youtube-player i {
+  font-size: 1.3em;
+  color: #ff0000;
+  animation: youtubeIconPulse 2s infinite;
+}
+
+.youtube-player span {
+  font-family: 'Chewy', cursive;
+  color: #ff0000;
+  font-size: 0.9em;
+  text-shadow: 0 2px 4px rgba(255,255,255,0.8);
+}
+
+@keyframes pandaBounce {
+  0%, 100% { transform: translateY(0) scale(1); }
+  33% { transform: translateY(-8px) scale(1.05); }
+  66% { transform: translateY(-4px) scale(1.02); }
+}
+
+@keyframes youtubePandaFloat {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-6px); }
+}
+
+.music-control.playing {
+  animation: musicPulsePanda 1.2s infinite;
+  border-color: #ff6b9d;
+}
+
+@keyframes musicPulsePanda {
+  0% { box-shadow: 0 15px 40px rgba(255,154,139,0.6); }
+  50% { box-shadow: 0 20px 50px rgba(255,107,157,0.9), 0 0 40px rgba(255,107,157,0.6); }
+  100% { box-shadow: 0 15px 40px rgba(255,154,139,0.6); }
+}
+
+/* PANDA DANCE STAGE - MOBILE OPTIMIZED */
+.panda-dance-stage {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 150px;
+  z-index: 10;
+  display: none;
+  justify-content: center;
+  align-items: flex-end;
+  pointer-events: none;
+}
+
+.dance-floor {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 40px;
+  background: linear-gradient(90deg, 
+    #ff9a8b, #fab1a0, #ffd23f, 
+    #ff9a8b, #fab1a0, #ffd23f);
+  background-size: 300% 100%;
+  animation: danceFloorMove 3s linear infinite;
+  border-radius: 20px 20px 0 0;
+}
+
+.dancing-pandas {
+  position: relative;
+  display: flex;
+  gap: 15px;
+  align-items: flex-end;
+  z-index: 11;
+}
+
+.dancing-panda {
+  font-size: 2.5em;
+  animation: pandaDance 2s infinite ease-in-out;
+  filter: drop-shadow(0 5px 10px rgba(0,0,0,0.4));
+  transform-origin: bottom;
+}
+
+@keyframes pandaDance {
+  0%, 100% { 
+    transform: translateY(0) rotate(0deg) scale(1); 
+  }
+  25% { 
+    transform: translateY(-20px) rotate(-10deg) scale(1.1); 
+  }
+  50% { 
+    transform: translateY(-35px) rotate(10deg) scale(1.2); 
+  }
+  75% { 
+    transform: translateY(-20px) rotate(-5deg) scale(1.1); 
+  }
+}
+
+/* COUNTDOWN - MOBILE OPTIMIZED */
+.countdown {
+  position: fixed;
+  top: 80px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 8px;
+  z-index: 20;
+  font-family: 'Fredoka One', cursive;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  padding: 0 10px;
+}
+
+.time-unit {
+  background: linear-gradient(145deg, #fff2cc, #ffe6b3, #fff8dc);
+  border: 4px solid #ff9a8b;
+  border-radius: 25px;
+  padding: 15px 12px;
+  min-width: 65px;
+  text-align: center;
+  box-shadow: 
+    0 15px 35px rgba(255,154,139,0.6),
+    inset 0 4px 0 rgba(255,255,255,0.95),
+    0 0 30px rgba(255,152,139,0.4);
+  position: relative;
+  overflow: hidden;
+  animation: pandaWobble 5s infinite;
+  transition: all 0.3s ease;
+  touch-action: manipulation;
+}
+
+.time-unit:active {
+  transform: scale(0.95);
+}
+
+.time-num {
+  font-size: 1.8em;
+  font-weight: 800;
+  background: linear-gradient(135deg, #e17055, #ff9a8b, #fab1a0);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  display: block;
+  animation: superPandaBounce 1.8s infinite;
+  position: relative;
+  z-index: 3;
+}
+
+.time-label {
+  font-size: 0.8em;
+  color: #e17055;
+  font-weight: 700;
+  margin-top: 4px;
+  text-shadow: 0 2px 4px rgba(255,255,255,0.9);
+  font-family: 'Balsamiq Sans', cursive;
+}
+
+/* HEADING */
+h1 {
+  font-family: 'Dancing Script', cursive;
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  background: linear-gradient(135deg, #e17055, #ff9a8b, #fab1a0, #ffd23f, #ff6b9d, #e17055);
+  background-size: 400% 400%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: pandaRainbow 6s ease infinite;
+  position: relative;
+  text-shadow: 0 5px 10px rgba(255,152,139,0.5);
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  z-index: 2;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  line-height: 1.2;
+  word-break: break-word;
+  padding: 0 10px;
+}
+
+.text-container.show h1 {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* MOBILE FLOATERS - REDUCED FOR PERFORMANCE */
+.panda-floater, .rose-floater, .panda-cupid {
+  position: absolute;
+  font-size: 24px;
+  z-index: 5;
+  animation: pandaFloat 20s ease-in-out infinite;
+  filter: drop-shadow(0 4px 8px rgba(0,0,0,0.3));
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  touch-action: manipulation;
+  will-change: transform;
+}
+
+/* CANVAS LAYERS */
+canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  pointer-events: none;
+}
+
+/* RESPONSIVE BREAKPOINTS */
+@media (max-width: 480px) {
+  .card {
+    padding: 25px 15px;
+    border-radius: 30px;
+    max-height: 80vh;
+  }
+  
+  h1 {
+    font-size: 2em;
+  }
+  
+  .text-line {
+    font-size: 1em;
+    line-height: 1.5;
+  }
+  
+  .heart-panda {
+    font-size: 4em;
+    margin: 15px 0;
+  }
+  
+  .signature {
+    font-size: 1.2em;
+    margin-top: 20px;
+  }
+  
+  .countdown {
+    top: 70px;
+    gap: 5px;
+  }
+  
+  .time-unit {
+    min-width: 55px;
+    padding: 12px 8px;
+  }
+  
+  .time-num {
+    font-size: 1.5em;
+  }
+  
+  .time-label {
+    font-size: 0.7em;
+  }
+  
+  .music-control, .youtube-player {
+    padding: 12px 15px;
+    min-height: 55px;
+    min-width: 55px;
+  }
+  
+  .youtube-player span {
+    display: none;
+  }
+  
+  .dancing-panda {
+    font-size: 2em;
+  }
+  
+  .panda-dance-stage {
+    height: 120px;
+  }
+}
+
+@media (max-width: 360px) {
+  .card {
+    padding: 20px 12px;
+  }
+  
+  h1 {
+    font-size: 1.8em;
+  }
+  
+  .text-line {
+    font-size: 0.9em;
+  }
+  
+  .heart-panda {
+    font-size: 3.5em;
+  }
+  
+  .time-unit {
+    min-width: 50px;
+    padding: 10px 6px;
+  }
+  
+  .time-num {
+    font-size: 1.3em;
+  }
+}
+
+/* LANDSCAPE ORIENTATION */
+@media (orientation: landscape) and (max-height: 600px) {
+  .text-container {
+    top: 45%;
+  }
+  
+  .card {
+    max-height: 70vh;
+    padding: 20px 15px;
+  }
+  
+  .countdown {
+    top: 10px;
+    position: absolute;
+  }
+  
+  .panda-dance-stage {
+    height: 100px;
+  }
+  
+  .dancing-panda {
+    font-size: 1.8em;
+  }
+}
+
+/* PREVENT TEXT SELECTION */
+.no-select {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+</style>
+</head>
+<body class="no-select">
+<!-- PANDA DANCE STAGE -->
+<div class="panda-dance-stage" id="pandaDanceStage">
+  <div class="dance-floor"></div>
+  <div class="dancing-pandas">
+    <div class="dancing-panda">🐼🌸</div>
+    <div class="dancing-panda">🌸🐼</div>
+    <div class="dancing-panda">🐼🎀</div>
+    <div class="dancing-panda">🎀🐼</div>
+  </div>
+</div>
+
+<!-- YOUTUBE MUSIC PLAYER -->
+<div class="youtube-player" onclick="openYouTube()">
+  <i class="fab fa-youtube"></i>
+  <span>Panda Love Song 🎵🌸🎀</span>
+</div>
+
+<!-- MUSIC PLAYER BUTTON -->
+<div class="music-control playing" id="musicBtn"></div>
+
+<!-- AUDIO -->
+<audio id="bgMusic" loop preload="auto">
+  <source src="https://assets.mixkit.co/music/preview/mixkit-clear-sky-479.mp3" type="audio/mp3">
+</audio>
+
+<!-- CANVAS LAYERS -->
+<canvas id="fireworksCanvas"></canvas>
+<canvas id="bubblesCanvas"></canvas>
+
+<!-- COUNTDOWN -->
+<div class="countdown" id="countdown">
+  <div class="time-unit">
+    <span class="time-num" id="days">00</span>
+    <span class="time-label">Days</span>
+  </div>
+  <div class="time-unit">
+    <span class="time-num" id="hours">00</span>
+    <span class="time-label">Hours</span>
+  </div>
+  <div class="time-unit">
+    <span class="time-num" id="minutes">00</span>
+    <span class="time-label">Mins</span>
+  </div>
+  <div class="time-unit">
+    <span class="time-num" id="seconds">00</span>
+    <span class="time-label">Secs</span>
+  </div>
+</div>
+
+<!-- EMOJI CONTAINER -->
+<div id="emojiContainer"></div>
+
+<!-- TEXT CONTAINER -->
+<div class="text-container" id="textContainer">
+  <div class="card">
+    <div class="card-bg-pattern"></div>
+    <h1>Happy New Year, My Beautiful Panda 🥰🌸🎀</h1>
+    
+    <div class="message-text">
+      <span class="text-line">Another magical year begins,</span>
+      <span class="text-line">and somehow my heart still chooses you—</span>
+      <span class="text-line">every single time. 💗💕🌹🌸🎀</span>
+      <span class="text-line"></span>
+      <span class="text-line">Even with miles between us,</span>
+      <span class="text-line">you are my comfort,</span>
+      <span class="text-line">my smile,</span>
+      <span class="text-line">my favorite thought before sleep. 🌙✨🐼🌸</span>
+      <span class="text-line"></span>
+      <span class="text-line">Thank you for loving me the way you do,</span>
+      <span class="text-line">for staying, for trying, for being you. 🥺💖🌹🍭</span>
+      <span class="text-line"></span>
+      <span class="text-line">This new year,</span>
+      <span class="text-line">I just want us—</span>
+      <span class="text-line">more laughs, more love,</span>
+      <span class="text-line">and one day… no distance at all. 🌈💑🐼💕🌸🎀</span>
+    </div>
+    
+    <div class="heart-panda">💖🐼💕🌸🎀</div>
+    
+    <div class="signature">
+      — Forever yours,<br>
+      Your Panda Love 💝🌹🌸🎀🍭🐾
+    </div>
+  </div>
+</div>
+
+<script>
+// MOBILE OPTIMIZED SCRIPT
+document.addEventListener('DOMContentLoaded', function() {
+  // Fix viewport height for mobile
+  function setVH() {
+    let vh = window.innerHeight * 0.01;
+    document.documentElement.style.setProperty('--vh', `${vh}px`);
+  }
+  setVH();
+  window.addEventListener('resize', setVH);
+  
+  // Prevent zoom on double tap
+  let lastTouchEnd = 0;
+  document.addEventListener('touchend', function(event) {
+    const now = Date.now();
+    if (now - lastTouchEnd <= 300) {
+      event.preventDefault();
+    }
+    lastTouchEnd = now;
+  }, false);
+  
+  // Prevent pull-to-refresh on iOS
+  document.addEventListener('touchmove', function(e) {
+    if (e.scale !== 1) {
+      e.preventDefault();
+    }
+  }, { passive: false });
+});
+
+// Cute emoji arrays
+const cuteEmojis = [
+  '🌸', '🎀', '🍭', '🐾', '💝', '💞', '💓', '💗', '💖', '💘', 
+  '💕', '💟', '🌺', '🌷', '🌼', '💐', '🎁', '🎊', '🎉', '✨',
+  '🌟', '⭐', '💫', '🌠', '☁️', '🌈', '🍬', '🍫', '🧁', '🍩'
+];
+
+/* TEXT APPEARANCE AFTER 3 SECONDS */
+const textContainer = document.getElementById('textContainer');
+
+// Show text container after 3 seconds
+setTimeout(() => {
+  textContainer.classList.add('show');
+  
+  // Animate text lines one by one
+  const textLines = document.querySelectorAll('.text-line');
+  textLines.forEach((line, index) => {
+    setTimeout(() => {
+      line.style.opacity = '1';
+      line.style.transform = 'translateY(0)';
+    }, index * 120 + 100);
+  });
+  
+  // Animate heart panda
+  setTimeout(() => {
+    const heartPanda = document.querySelector('.heart-panda');
+    heartPanda.style.opacity = '1';
+    
+    // Add touch event for mobile
+    heartPanda.addEventListener('touchstart', function(e) {
+      e.preventDefault();
+      createPandaFireworks(3);
+      createEmojiShower(8);
+      this.style.animation = 'pandaHeartExplosion 0.6s forwards';
+      setTimeout(() => {
+        this.style.animation = 'pandaHeartBeat 1.2s infinite ease-in-out';
+      }, 600);
+    }, { passive: false });
+  }, textLines.length * 120 + 300);
+  
+  // Animate signature
+  setTimeout(() => {
+    document.querySelector('.signature').style.opacity = '1';
+  }, textLines.length * 120 + 600);
+}, 3000);
+
+/* EMOJI FLOATERS - REDUCED FOR MOBILE */
+function createEmojiFloater() {
+  const emojiContainer = document.getElementById('emojiContainer');
+  if (emojiContainer.children.length > 15) return; // Limit for performance
+  
+  const emoji = document.createElement('div');
+  emoji.className = 'emoji-floater';
+  emoji.innerHTML = cuteEmojis[Math.floor(Math.random() * cuteEmojis.length)];
+  
+  emoji.style.left = Math.random() * 100 + '%';
+  emoji.style.fontSize = (15 + Math.random() * 10) + 'px';
+  emoji.style.animationDuration = (12 + Math.random() * 8) + 's';
+  emoji.style.animationDelay = Math.random() * 3 + 's';
+  emoji.style.opacity = 0.7 + Math.random() * 0.3;
+  
+  emojiContainer.appendChild(emoji);
+  setTimeout(() => emoji.remove(), 20000);
+}
+
+// Start creating emoji floaters
+for (let i = 0; i < 8; i++) {
+  setTimeout(() => createEmojiFloater(), i * 300);
+}
+setInterval(createEmojiFloater, 1500);
+
+/* EMOJI SHOWER FUNCTION */
+function createEmojiShower(count = 5) {
+  for (let i = 0; i < count; i++) {
+    setTimeout(() => {
+      const shower = document.createElement('div');
+      shower.className = 'emoji-shower';
+      shower.innerHTML = cuteEmojis[Math.floor(Math.random() * cuteEmojis.length)];
+      shower.style.left = Math.random() * 100 + '%';
+      shower.style.top = Math.random() * 50 + 10 + '%';
+      shower.style.fontSize = (15 + Math.random() * 10) + 'px';
+      document.body.appendChild(shower);
+      setTimeout(() => shower.remove(), 1500);
+    }, i * 100);
+  }
+}
+
+/* MUSIC CONTROLLER */
+const musicBtn = document.getElementById('musicBtn');
+const bgMusic = document.getElementById('bgMusic');
+const pandaDanceStage = document.getElementById('pandaDanceStage');
+let isPlaying = false;
+
+// Start music on first user interaction
+function startMusicOnInteraction() {
+  if (isPlaying) return;
+  
+  bgMusic.volume = 0.3;
+  bgMusic.play().then(() => {
+    console.log('🎵 Music started');
+    musicBtn.classList.add('playing');
+    isPlaying = true;
+    pandaDanceStage.style.display = 'flex';
+    
+    // Start heart notes
+    startHeartNotes();
+  }).catch(error => {
+    console.log('🎵 Music play failed:', error);
+  });
+}
+
+// Add interaction listeners
+musicBtn.addEventListener('click', function(e) {
+  e.preventDefault();
+  startMusicOnInteraction();
+});
+
+musicBtn.addEventListener('touchstart', function(e) {
+  e.preventDefault();
+  startMusicOnInteraction();
+}, { passive: false });
+
+// Toggle play/pause
+musicBtn.addEventListener('touchend', function(e) {
+  e.preventDefault();
+  if (!isPlaying) {
+    startMusicOnInteraction();
+  } else {
+    bgMusic.pause();
+    musicBtn.classList.remove('playing');
+    isPlaying = false;
+    pandaDanceStage.style.display = 'none';
+  }
+}, { passive: false });
+
+// YouTube button
+function openYouTube() {
+  window.open('https://www.youtube.com/watch?v=YDF8912j03E', '_blank');
+}
+
+// Heart notes function
+let heartNoteInterval;
+function startHeartNotes() {
+  if (heartNoteInterval) clearInterval(heartNoteInterval);
+  heartNoteInterval = setInterval(() => {
+    const heartNote = document.createElement('div');
+    heartNote.className = 'heart-note';
+    heartNote.innerHTML = cuteEmojis[Math.floor(Math.random() * 20)];
+    heartNote.style.left = Math.random() * 100 + '%';
+    heartNote.style.fontSize = (Math.random() * 0.8 + 1.2) + 'em';
+    heartNote.style.animationDuration = (Math.random() * 1.5 + 1.5) + 's';
+    pandaDanceStage.appendChild(heartNote);
+    setTimeout(() => heartNote.remove(), 3000);
+  }, 1200);
+}
+
+/* LIVE COUNTDOWN */
+function updateCountdown() {
+  const now = new Date();
+  const newYear = new Date('2026-01-01T00:00:00');
+  const diff = newYear - now;
+  
+  if (diff > 0) {
+    const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+    const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+    
+    document.getElementById('days').textContent = days.toString().padStart(2, '0');
+    document.getElementById('hours').textContent = hours.toString().padStart(2, '0');
+    document.getElementById('minutes').textContent = minutes.toString().padStart(2, '0');
+    document.getElementById('seconds').textContent = seconds.toString().padStart(2, '0');
+    
+    // Create occasional emoji showers
+    if (seconds % 10 === 0) {
+      createEmojiShower(2);
+    }
+  }
+}
+setInterval(updateCountdown, 1000);
+updateCountdown();
+
+/* SIMPLIFIED FIREWORKS FOR MOBILE */
+const canvas = document.getElementById('fireworksCanvas');
+const ctx = canvas.getContext('2d');
+canvas.width = window.innerWidth;
+canvas.height = window.innerHeight;
+
+let particles = [];
+
+class Particle {
+  constructor(x, y) {
+    this.x = x;
+    this.y = y;
+    this.size = Math.random() * 5 + 2;
+    this.speedX = Math.random() * 3 - 1.5;
+    this.speedY = Math.random() * 3 - 1.5;
+    this.color = `hsl(${Math.random() * 60 + 340}, 100%, 60%)`;
+    this.life = 100;
+  }
+  
+  update() {
+    this.x += this.speedX;
+    this.y += this.speedY;
+    this.size *= 0.97;
+    this.life--;
+  }
+  
+  draw() {
+    ctx.fillStyle = this.color;
+    ctx.beginPath();
+    ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+    ctx.fill();
+  }
+}
+
+function createPandaFireworks(count = 2) {
+  for (let i = 0; i < count; i++) {
+    const x = Math.random() * canvas.width;
+    const y = Math.random() * canvas.height * 0.5;
+    
+    for (let j = 0; j < 20; j++) {
+      particles.push(new Particle(x, y));
+    }
+  }
+}
+
+function animateFireworks() {
+  ctx.fillStyle = 'rgba(255, 248, 220, 0.05)';
+  ctx.fillRect(0, 0, canvas.width, canvas.height);
+  
+  for (let i = 0; i < particles.length; i++) {
+    particles[i].update();
+    particles[i].draw();
+    
+    if (particles[i].life <= 0 || particles[i].size <= 0.5) {
+      particles.splice(i, 1);
+      i--;
+    }
+  }
+  
+  requestAnimationFrame(animateFireworks);
+}
+animateFireworks();
+
+/* BUBBLES ANIMATION */
+const bubblesCanvas = document.getElementById('bubblesCanvas');
+const bubblesCtx = bubblesCanvas.getContext('2d');
+bubblesCanvas.width = window.innerWidth;
+bubblesCanvas.height = window.innerHeight;
+
+let bubbles = [];
+
+class Bubble {
+  constructor() {
+    this.x = Math.random() * bubblesCanvas.width;
+    this.y = bubblesCanvas.height + 10;
+    this.size = Math.random() * 20 + 10;
+    this.speed = Math.random() * 2 + 1;
+    this.emoji = cuteEmojis[Math.floor(Math.random() * 10)];
+  }
+  
+  update() {
+    this.y -= this.speed;
+    this.x += Math.sin(this.y * 0.01) * 0.5;
+    if (this.y < -20) {
+      this.y = bubblesCanvas.height + 10;
+      this.x = Math.random() * bubblesCanvas.width;
+    }
+  }
+  
+  draw() {
+    bubblesCtx.font = `${this.size}px Arial`;
+    bubblesCtx.fillText(this.emoji, this.x, this.y);
+  }
+}
+
+// Create fewer bubbles for mobile
+for (let i = 0; i < 20; i++) {
+  bubbles.push(new Bubble());
+}
+
+function animateBubbles() {
+  bubblesCtx.clearRect(0, 0, bubblesCanvas.width, bubblesCanvas.height);
+  
+  bubbles.forEach(bubble => {
+    bubble.update();
+    bubble.draw();
+  });
+  
+  requestAnimationFrame(animateBubbles);
+}
+animateBubbles();
+
+/* RESIZE HANDLER */
+let resizeTimeout;
+window.addEventListener('resize', function() {
+  clearTimeout(resizeTimeout);
+  resizeTimeout = setTimeout(function() {
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+    bubblesCanvas.width = window.innerWidth;
+    bubblesCanvas.height = window.innerHeight;
+  }, 250);
+});
+
+/* TOUCH EVENTS */
+document.addEventListener('touchstart', function(e) {
+  if (e.touches.length === 1) {
+    const touch = e.touches[0];
+    createEmojiShower(3);
+    createPandaFireworks(1);
+  }
+}, { passive: true });
+
+/* PERIODIC EFFECTS */
+setInterval(() => {
+  if (isPlaying) {
+    createEmojiShower(1);
+  }
+}, 5000);
+
+/* INITIAL EFFECTS */
+setTimeout(() => {
+  createEmojiShower(5);
+  createPandaFireworks(3);
+}, 1000);
+
+// Add missing animation keyframes
+const style = document.createElement('style');
+style.textContent = `
+@keyframes heartNoteFloat {
+  0% {
+    opacity: 1;
+    transform: translateY(0) scale(1) rotate(0deg);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-150px) scale(0.5) rotate(360deg);
+  }
+}
+
+@keyframes danceFloorMove {
+  0% { background-position: 0% 0%; }
+  100% { background-position: 300% 0%; }
+}
+
+@keyframes pandaWobble {
+  0%, 100% { transform: rotate(-1deg) scale(1); }
+  25% { transform: rotate(1deg) scale(1.02); }
+  50% { transform: rotate(0deg) scale(1.03); }
+  75% { transform: rotate(-0.5deg) scale(1.01); }
+}
+
+@keyframes superPandaBounce {
+  0%, 20%, 50%, 80%, 100% { transform: translateY(0) scale(1); }
+  10% { transform: translateY(-10px) scale(1.1); }
+  40% { transform: translateY(-5px) scale(1.05); }
+}
+
+@keyframes pandaRainbow {
+  0% { background-position: 0% 50%; }
+  25% { background-position: 100% 50%; }
+  50% { background-position: 100% 100%; }
+  75% { background-position: 0% 100%; }
+  100% { background-position: 0% 50%; }
+}
+
+@keyframes pandaFloat {
+  0% { 
+    transform: translateY(100vh) rotate(0deg) scale(0.8); 
+    opacity: 0; 
+  }
+  10% { opacity: 1; transform: translateY(90vh) rotate(-20deg) scale(1); }
+  90% { opacity: 1; transform: translateY(10vh) rotate(-30deg) scale(1.4); }
+  100% { 
+    transform: translateY(-30vh) rotate(20deg) scale(1); 
+    opacity: 0; 
+  }
+}
+
+@keyframes pandaHeartBeat {
+  0%, 100% { 
+    transform: scale(1) rotate(-1deg); 
+  }
+  14% { 
+    transform: scale(1.4) rotate(1deg); 
+  }
+  28% { 
+    transform: scale(1.2) rotate(-0.5deg); 
+  }
+  42% { 
+    transform: scale(1.4) rotate(0.5deg); 
+  }
+}
+
+@keyframes pandaHeartExplosion {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.8); filter: drop-shadow(0 0 30px #ff6b9d) brightness(1.5); }
+  100% { transform: scale(1.4); }
+}
+
+@keyframes signatureSpin {
+  0% { transform: rotate(0deg) scale(1); }
+  100% { transform: rotate(360deg) scale(1); }
+}
+
+@keyframes musicPandaDance {
+  0%, 100% { transform: rotate(0deg); }
+  25% { transform: rotate(5deg); }
+  75% { transform: rotate(-5deg); }
+}
+
+@keyframes musicShine {
+  0% { left: -100%; }
+  100% { left: 100%; }
+}
+
+@keyframes youtubeIconPulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+}
+
+.heart-note {
+  position: absolute;
+  font-size: 1.5em;
+  bottom: 100px;
+  animation: heartNoteFloat 3s ease-out forwards;
+  z-index: 12;
+  pointer-events: none;
+}
+`;
+document.head.appendChild(style);
+</script>
+</body>
+</html>
